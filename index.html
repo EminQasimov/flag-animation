@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Waving Flag Animation</title>
+    <style>
+    *, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html :hover {
+  cursor: pointer;
+}
+
+body {
+  height: 100%;
+  background: #ECEFF1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-perspective: 700px;
+          perspective: 700px;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+  width: 360px;
+  height: 180px;
+  -webkit-transform: rotateY(20deg) skew(5deg);
+          transform: rotateY(20deg) skew(5deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  background-image: url("https://flags.fmcdn.net/data/flags/w580/az.png");
+  background-size: 0;
+  background-position: -200% -200%;
+}
+.wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 7.5px;
+  height: 360px;
+  background: gold;
+  left: 7px;
+}
+
+.s {
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  left: 14px;
+  width: 15px;
+  height: 100%;
+  -webkit-transform-origin: 0 0;
+          -ms-transform-origin: 0 0;
+      transform-origin: 0 0;
+  background-repeat: no-repeat;
+  background-size: 360px 100%;
+  -webkit-transform: translateZ(0.0001px) rotateY(14.1176470588deg);
+          transform: translateZ(0.0001px) rotateY(14.1176470588deg);
+  background-image: inherit;
+}
+
+.s1 {
+  background-position-x: -15px;
+  -webkit-animation: w 1s 0.08s ease-in-out infinite alternate;
+          animation: w 1s 0.08s ease-in-out infinite alternate;
+}
+
+.s2 {
+  background-position-x: -30px;
+  -webkit-animation: w 1s 0.16s ease-in-out infinite alternate;
+          animation: w 1s 0.16s ease-in-out infinite alternate;
+}
+
+.s3 {
+  background-position-x: -45px;
+  -webkit-animation: w 1s 0.24s ease-in-out infinite alternate;
+          animation: w 1s 0.24s ease-in-out infinite alternate;
+}
+
+.s4 {
+  background-position-x: -60px;
+  -webkit-animation: w 1s 0.32s ease-in-out infinite alternate;
+          animation: w 1s 0.32s ease-in-out infinite alternate;
+}
+
+.s5 {
+  background-position-x: -75px;
+  -webkit-animation: w 1s 0.4s ease-in-out infinite alternate;
+          animation: w 1s 0.4s ease-in-out infinite alternate;
+}
+
+.s6 {
+  background-position-x: -90px;
+  -webkit-animation: w 1s 0.48s ease-in-out infinite alternate;
+          animation: w 1s 0.48s ease-in-out infinite alternate;
+}
+
+.s7 {
+  background-position-x: -105px;
+  -webkit-animation: w 1s 0.56s ease-in-out infinite alternate;
+          animation: w 1s 0.56s ease-in-out infinite alternate;
+}
+
+.s8 {
+  background-position-x: -120px;
+  -webkit-animation: w 1s 0.64s ease-in-out infinite alternate;
+          animation: w 1s 0.64s ease-in-out infinite alternate;
+}
+
+.s9 {
+  background-position-x: -135px;
+  -webkit-animation: w 1s 0.72s ease-in-out infinite alternate;
+          animation: w 1s 0.72s ease-in-out infinite alternate;
+}
+
+.s10 {
+  background-position-x: -150px;
+  -webkit-animation: w 1s 0.8s ease-in-out infinite alternate;
+          animation: w 1s 0.8s ease-in-out infinite alternate;
+}
+
+.s11 {
+  background-position-x: -165px;
+  -webkit-animation: w 1s 0.88s ease-in-out infinite alternate;
+          animation: w 1s 0.88s ease-in-out infinite alternate;
+}
+
+.s12 {
+  background-position-x: -180px;
+  -webkit-animation: w 1s 0.96s ease-in-out infinite alternate;
+          animation: w 1s 0.96s ease-in-out infinite alternate;
+}
+
+.s13 {
+  background-position-x: -195px;
+  -webkit-animation: w 1s 1.04s ease-in-out infinite alternate;
+          animation: w 1s 1.04s ease-in-out infinite alternate;
+}
+
+.s14 {
+  background-position-x: -210px;
+  -webkit-animation: w 1s 1.12s ease-in-out infinite alternate;
+          animation: w 1s 1.12s ease-in-out infinite alternate;
+}
+
+.s15 {
+  background-position-x: -225px;
+  -webkit-animation: w 1s 1.2s ease-in-out infinite alternate;
+          animation: w 1s 1.2s ease-in-out infinite alternate;
+}
+
+.s16 {
+  background-position-x: -240px;
+  -webkit-animation: w 1s 1.28s ease-in-out infinite alternate;
+          animation: w 1s 1.28s ease-in-out infinite alternate;
+}
+
+.s17 {
+  background-position-x: -255px;
+  -webkit-animation: w 1s 1.36s ease-in-out infinite alternate;
+          animation: w 1s 1.36s ease-in-out infinite alternate;
+}
+
+.s18 {
+  background-position-x: -270px;
+  -webkit-animation: w 1s 1.44s ease-in-out infinite alternate;
+          animation: w 1s 1.44s ease-in-out infinite alternate;
+}
+
+.s19 {
+  background-position-x: -285px;
+  -webkit-animation: w 1s 1.52s ease-in-out infinite alternate;
+          animation: w 1s 1.52s ease-in-out infinite alternate;
+}
+
+.s20 {
+  background-position-x: -300px;
+  -webkit-animation: w 1s 1.6s ease-in-out infinite alternate;
+          animation: w 1s 1.6s ease-in-out infinite alternate;
+}
+
+.s21 {
+  background-position-x: -315px;
+  -webkit-animation: w 1s 1.68s ease-in-out infinite alternate;
+          animation: w 1s 1.68s ease-in-out infinite alternate;
+}
+
+.s22 {
+  background-position-x: -330px;
+  -webkit-animation: w 1s 1.76s ease-in-out infinite alternate;
+          animation: w 1s 1.76s ease-in-out infinite alternate;
+}
+
+.s23 {
+  background-position-x: -345px;
+  -webkit-animation: w 1s 1.84s ease-in-out infinite alternate;
+          animation: w 1s 1.84s ease-in-out infinite alternate;
+}
+
+.s24 {
+  background-position-x: -360px;
+  -webkit-animation: w 1s 1.92s ease-in-out infinite alternate;
+          animation: w 1s 1.92s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes w {
+  to {
+    -webkit-transform: translateZ(0.0001px) rotateY(-14.1176470588deg);
+            transform: translateZ(0.0001px) rotateY(-14.1176470588deg);
+  }
+}
+
+@keyframes w {
+  to {
+    -webkit-transform: translateZ(0.0001px) rotateY(-14.1176470588deg);
+            transform: translateZ(0.0001px) rotateY(-14.1176470588deg);
+  }
+}</style>
+</head>
+<body>
+    
+<div class="wrapper">
+	<div class="s s0">
+ 	<div class="s s1">
+ 		<div class="s s2">
+ 			<div class="s s3">
+ 				<div class="s s4">
+ 					<div class="s s5">
+ 						<div class="s s6">
+ 							<div class="s s7">
+ 								<div class="s s8">
+ 									<div class="s s9">
+ 										<div class="s s10">
+ 											<div class="s s11">
+ 												<div class="s s12">
+ 													<div class="s s13">
+ 														<div class="s s14">
+ 															<div class="s s15">
+ 																<div class="s s16">
+ 																	<div class="s s17">
+ 																		<div class="s s18">
+ 																			<div class="s s19">
+ 																				<div class="s s20">
+ 																					<div class="s s21">
+ 																						<div class="s s22">
+ 																							<div class="s s23">
+ 																								<div class="s s24">
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+</div>
+
+<script>
+//click and change flag
+var flag = document.getElementsByClassName("wrapper")[0]
+var list = ['af','al','dz','ad','ao','ag','ar','au','at','az','bs','bh','bd','bb','by','be','bz','bj','bt','bo','ba','bw','br','bn','bg','bf','bi','kh','cm','ca','cv','cf','td','cl','cn','co','km','cg','cd','ck','cr','ci','hr','cu','cy','cz','dk','dj','dm','do','ec','eg','sv','gq','er','ee','et','fi','fr','ga','gm','ge','de','gh','gr','gd','gt','gn','gw','gy','ht','va','hn','hu','is','in','id','ir','iq','ie','il','it','jm','jp','jo','kz','ke','ki','kr','kw','kg','la','lv','lb','ls','lr','ly','li','lt','lu','mk','mg','mw','my','mv','ml','mt','mh','mr','mu','mx','fm','md','mc','mn','me','ma','mz','mm','na','nr','np','nl','nz','ni','ne','ng','nu','no','om','pk','pw','pa','pg','py','pe','ph','pl','pt','qa','ro','ru','rw','kn','lc','vc','ws','sm','st','sa','sn','rs','sc','sl','sg','sk','si','sb','so','za','es','lk','sd','sr','sz','se','ch','sy','tw','tj','tz','th','tl','tg','to','tt','tn','tr','tm','tv','ug','ua','ae','gb','us','uy','uz','vu','ve','vn','eh','ye','zm','zw']  
+var n = list.length - 1
+onclick = function(){  
+ 	flag.style.backgroundImage =`url('https://flags.fmcdn.net/data/flags/w580/`+list[n]+`.png')`
+	n==0 ? n = list.length - 1 : n--
+}
+
+</script>
+
+</body>
+</html>
